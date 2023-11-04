@@ -8,8 +8,6 @@ public class Student extends Person {
         this.classroom = classroom;
     }
 
-    // Getters for classroom
-    public String getClassroom() {
-        return classroom;
+    
     }
-}
+
