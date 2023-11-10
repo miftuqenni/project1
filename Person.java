@@ -1,20 +1,18 @@
 
-public class Person {
-    private int id;
-    private String name;
-    private int age;
-    private boolean parent_permission;
+public class Person implements Nameable{
+    int id;
+    String name;
+     int age;
+     boolean parent_permission;
 
     // Constructors
-    public Person(int id, String name, int age, boolean parent_permission) {
-        this.id = id;
+
+
+    public Person(String name, int age,boolean parent_permission){
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
-    }
 
-    public Person(int id, int age) {
-        this(id, "Unknown", age, true);
     }
 
     // Getters
@@ -48,4 +46,8 @@ public class Person {
     public boolean canUseServices() {
         return ofAge() || parent_permission;
     }
+
+public String getCorrectName(){
+    return name;
+}
 }
