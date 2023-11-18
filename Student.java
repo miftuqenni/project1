@@ -7,6 +7,9 @@ public class Student extends Person {
         super( name, age, parent_permission);
         this.classroom = classroom;
     }
+    public void setClassroom(Classroom classroom){
+
+    }
 
     // Getters for classroom
 }
