@@ -12,9 +12,19 @@ public class Person implements Nameable{
 
 
     public Person(String name, int age,boolean parent_permission){
+public class Person {
+     int i;
+    String name="unkown";
+     int age;
+     boolean parent_permission=true;
+
+    // Constructors
+    public Person(String name, int age, boolean parent_permission) {
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
+
+
 
     }
 
