@@ -1,4 +1,17 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class Person implements Nameable{
+    int id;
+    String name;
+     int age;
+     boolean parent_permission;
+
+    // Constructors
+
+
+    public Person(String name, int age,boolean parent_permission){
 public class Person {
      int i;
     String name="unkown";
@@ -10,9 +23,9 @@ public class Person {
         this.name = name;
         this.age = age;
         this.parent_permission = parent_permission;
-    }
 
-   
+
+
     }
 
     // Getters
@@ -45,5 +58,23 @@ public class Person {
     // Public method
     public boolean canUseServices() {
         return ofAge() || parent_permission;
+    }
+
+public String getCorrectName(){
+    return name;
+}
+    private List<Rental> rentals;
+
+    public Person(String name) {
+        this.name = name;
+        this.rentals = new ArrayList<>();
+    }
+
+    public List<Rental> getRentals() {
+        return rentals;
+    }
+
+    public void addRental(Rental rental) {
+        rentals.add(rental);
     }
 }

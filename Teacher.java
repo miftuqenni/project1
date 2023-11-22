@@ -4,7 +4,7 @@ public class Teacher extends Person {
 
     // Constructor
     public Teacher(int id, String name, int age, boolean parent_permission, String specialization) {
-        super(id, name, age, parent_permission);
+        super( name, age, parent_permission);
         this.specialization = specialization;
     }
 
